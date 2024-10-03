@@ -1,0 +1,21 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/font.scss";
+
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+&__label{
+    @include Text-1-Semibold;
+    color: $color-01;
+}
+   input{
+    padding: 0px 8px 0px 16px;
+    gap: 8px;
+    border-radius: 50px;
+    border: 2px solid $color-04;
+    width: 340px;
+    height: 42px;
+    @include Text-2-Medium
+   }
+}

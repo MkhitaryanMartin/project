@@ -1,0 +1,23 @@
+.header{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1160px;
+    &__right-block{
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+    }
+    &__avatar-block{
+        display: flex;
+        column-gap: 8px;
+        margin-left: 16px;
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+    }
+}

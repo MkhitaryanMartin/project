@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+@import "../../styles/font.scss";
+
+
+.home{
+  &__active-block{
+    padding-top: 40px;
+    h2{
+      margin-bottom: 44px;
+      @include Title-Semibold;
+      color: $color-01;
+      border-bottom: 1px solid $color-04;
+      padding-bottom: 16px;
+    }
+  }
+  &__active-users{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+}

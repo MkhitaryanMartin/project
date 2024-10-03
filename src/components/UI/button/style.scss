@@ -1,0 +1,22 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/font.scss";
+
+.button {
+    padding: 12px 42px;
+    border-radius: 50px;
+    background-color: $color-01;
+    color: $color-06;
+    width: fit-content;
+    @include Text-2-Semibold;
+    &:hover{
+        background-color: $color-05;
+        color: $color-02;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .button{
+        @include Mobile-Text-2-Semibold
+    }
+}

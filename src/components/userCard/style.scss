@@ -1,0 +1,80 @@
+@import "../../styles/colors.scss";
+@import "../../styles/font.scss";
+
+.user-card{
+    display: flex;
+    gap: 20px;
+    border-radius: 16px;
+    padding: 24px;
+    width: 360px;
+    height: 168px;
+    background-color: $color-06;
+    &__left-block{
+        width: 112px;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+           }
+    }
+    &__right-block{
+       flex: 1;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__names-block{
+        text-align: left;
+        p{
+            @include Text-2-Medium;
+            color: $color-02;
+        }
+    }
+    
+    &__first-line{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        h3{
+            @include Headline-Semibold;
+            color: $Accent;
+        }
+        svg{
+            min-width: 24px;
+            cursor: pointer;
+            &:hover{
+                path{
+                    fill: $Accent;
+                }
+            }
+        }
+    }
+    &__address{
+        @include Caption-Regular;
+        color: $color-03;
+        text-align: left;
+    }
+    &--active{
+       .user-card__names-block{
+            p{
+                color: $color-03;
+            }
+        }
+         .user-card__address{
+            color: $color-04;
+        }
+        .user-card__first-line{
+            h3{
+                color: $color-02;
+            }
+        }
+       .user-card__left-block{
+            img{
+                filter: grayscale(100%);
+               }
+        }
+    }
+}
