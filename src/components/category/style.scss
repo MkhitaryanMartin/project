@@ -1,0 +1,31 @@
+@import "../../styles/colors.scss";
+@import "../../styles/font.scss";
+
+.category{
+    width: 280px;
+    border-bottom: 1px solid $color-04;
+    padding-bottom: 12px;
+    cursor: pointer;
+    color: $color-03;
+    transition: all 0.2s ease;
+    @include Text-2-Medium;
+    &:hover{
+        color: $Accent
+    }
+}
+.active{
+    color: $color-01;
+    @include Text-2-Semibold;
+}
+
+
+@media only screen and (max-width: 768px){
+    .category{
+        padding-bottom: 8px;
+        @include Mobile-Text-2-Medium;
+      
+        .category{
+            @include Mobile-Text-2-Medium;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { hideModal } from '../../store/modal';
+import MODAL_COMPONENTS from './modalComponents';
+
+const ModalRoot = ({ modalType = '', modalProps = {} }) => {
+   console.log(modalType,"modalType")
+   const dispatch = useDispatch();
+   if (!modalType) return;
+   const hideModalHandler = () => {
+      dispatch(hideModal());
+   };
+   const SpecificModal = MODAL_COMPONENTS[modalType];
+   return <SpecificModal onClose={hideModalHandler} {...modalProps} />;
+};
+
+export default ModalRoot;

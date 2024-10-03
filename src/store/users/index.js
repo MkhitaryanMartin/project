@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getUser } from './operations'
+import { deleteUser, getUser } from './operations'
 
 const initialState = {
   userData: [],
@@ -43,6 +43,14 @@ export const users = createSlice({
       .addCase(getUser.rejected, (state, {payload}) => {
         state.loader =  false;
      })
+     .addCase(deleteUser.fulfilled, (state, { payload }) => {
+      state.loader = false;
+      state.userData = state.userData.filter((user) => user?.id !== payload);;
+    })
+    .addCase(deleteUser.pending, (state, { payload }) => {
+      state.loader = true;
+    })
+
   },
 })
 

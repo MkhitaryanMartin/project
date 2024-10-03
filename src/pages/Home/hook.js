@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { getUser } from "../../store/users/operations";
+import axios from "axios";
 
 
 const useContainer = () => {
 
     const { userData, archiveData, loader } = useSelector((state) => state.users);
     const dispatch = useDispatch();
-    console.log(userData, archiveData)
+  
     const options = [
         {
             key:"1",

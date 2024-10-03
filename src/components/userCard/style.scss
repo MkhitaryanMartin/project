@@ -78,3 +78,46 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .user-card{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    width: 162px;
+    height: 242px;
+    &__left-block{
+        width: 130px;
+        height: 120px;
+    }
+
+    &__names-block{
+        p{
+            @include Mobile-Text-2-Semibold;
+            color: $color-02;
+        }
+    }
+    
+    &__first-line{
+        gap: 10px;
+        margin-bottom: 4px;
+        h3{
+            @include Mobile-Headline-Semibold;
+            color: $Accent;
+            max-height: 1em;
+            overflow: hidden;
+        }
+        svg{
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+    &__address{
+        @include Mobile-Caption-2-Semibold;
+    }
+
+      
+    
+}
+}

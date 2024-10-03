@@ -2,9 +2,13 @@
 @import "../../styles/font.scss";
 
 .profile-edite{
+    padding: 20px 0;
     &__back-button{
-        margin: 24px 0 44px;
+        margin: 0 0 44px;
         color: $color-02;
+      display: flex;
+      column-gap: 8px;
+      @include Headline-Semibold;
     }
     &__sections{
         display: flex;
@@ -22,14 +26,17 @@
         }
     }
     &__right-block{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
         padding: 40px;
         background-color: $color-06;
         border-radius: 16px;
         width: 100%;
         max-width: 760px;
+        
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         h4{
             color: $color-01;
             border-bottom: 1px solid $color-04;
@@ -42,5 +49,37 @@
         display: flex;
         flex-direction: column;
         row-gap: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .profile-edite{
+        &__back-button{
+            @include Mobile-Headline-Semibold;
+        }
+        &__sections{
+         flex-direction: column;
+         gap: 32px;
+           
+        }
+        &__left-block{
+            border-radius: 16px;
+            background-color: $color-06;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                width: 287px;
+                height: 187px;
+                object-fit: cover;
+            }
+        }
+        &__right-block{
+            padding: 28px
+            
+        }
     }
 }

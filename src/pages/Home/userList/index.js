@@ -13,7 +13,7 @@ const UserList = ({
     return (
       
            <div className="home__active-block">
-           <h2>{title}</h2>
+           <h2 className="title-semibold">{title}</h2>
            <div className="home__active-users">
            {!isEmpty(list) ? (list?.map((user)=>(
                 <UserCard 

@@ -3,9 +3,9 @@ import MoreIcon from '../SVG/moreIcon';
 import Dropdown from '../UI/dropdown';
 import { useDispatch } from 'react-redux';
 import { activeUserdata, setUsersData } from '../../store/users';
-import "./style.scss"
 import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
+import "./style.scss"
 
 const UserCard = ({
     name = "",
@@ -30,7 +30,7 @@ const UserCard = ({
                     dispatch(activeUserdata(id));
                     break;
             default: 
-            navigate("profile-edite")
+            navigate(`profile-edite/${id}`)
             
         }
     }

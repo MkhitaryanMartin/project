@@ -6,124 +6,119 @@
 }
 
 
-// @mixin Title-Semibold {
-//     @include font-style(24px, 600, 32.78px);
-// }
-
-// @mixin Headline-Semibold {
-//     @include font-style(20px, 600, 27.32px);
-// }
-
-// @mixin Text-1-Semibold {
-//     @include font-style(18px, 600, 24.59px);
-// }
-
-// @mixin Text-1-Medium {
-//     @include font-style(20px, 600, 27.32px);
-// }
-
-// @mixin Text-2-Semibold {
-//     @include font-style(16px, 600, 21.86px);
-// }
-
-// @mixin Text-2-Medium {
-//     @include font-style(16px, 500, 21.86px);
-// }
-
-// @mixin Caption-Regular {
-//     @include font-style(14px, 500, 19.12px);
-// }
-
-
-// @mixin Mobile-Title-Semibold {
-//     @include font-style(24px, 600, 32.78px);
-// }
-
-// @mixin Mobile-Headline-Semibold {
-//     @include font-style(18px, 600, 24.59px);
-// }
-
-// @mixin Mobile-Text-1-Semibold {
-//     @include font-style(16px, 600, 21.86px);
-// }
-
-// @mixin Mobile-Text-1-Medium {
-//     @include font-style(16px, 500, 21.86px);
-// }
-
-// @mixin Mobile-Text-2-Semibold {
-//     @include font-style(14px, 600, 19.12px);
-// }
-
-// @mixin Mobile-Text-2-Medium {
-//     @include font-style(14px, 500, 19.12px);
-// }
-
-// @mixin Mobile-Caption-2-Semibold {
-//     @include font-style(10px, 600, 13.66px);
-// }
-
-@mixin font-style($font-size, $font-weight, $line-height) {
-    font-family: Manrope;
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-}
-
-.title-semibold {
+@mixin Title-Semibold {
     @include font-style(24px, 600, 32.78px);
-
-    @media (max-width: 768px) {
-        @include font-style(18px, 600, 24.59px); 
-    }
 }
 
-.headline-semibold {
+@mixin Headline-Semibold {
     @include font-style(20px, 600, 27.32px);
-
-    @media (max-width: 768px) {
-        @include font-style(18px, 600, 24.59px);
-    }
 }
 
-.text-1-semibold {
+@mixin Text-1-Semibold {
     @include font-style(18px, 600, 24.59px);
-
-    @media (max-width: 768px) {
-        @include font-style(16px, 600, 21.86px); 
-    }
 }
 
-.text-1-medium {
+@mixin Text-1-Medium {
     @include font-style(20px, 600, 27.32px);
-
-    @media (max-width: 768px) {
-        @include font-style(16px, 500, 21.86px); 
-    }
 }
 
-.text-2-semibold {
+@mixin Text-2-Semibold {
     @include font-style(16px, 600, 21.86px);
-
-    @media (max-width: 768px) {
-        @include font-style(14px, 600, 19.12px); 
-    }
 }
 
-.text-2-medium {
+@mixin Text-2-Medium {
     @include font-style(16px, 500, 21.86px);
-
-    @media (max-width: 768px) {
-        @include font-style(14px, 500, 19.12px); 
-    }
 }
 
-.caption-regular {
+@mixin Caption-Regular {
     @include font-style(14px, 500, 19.12px);
-
-    @media (max-width: 768px) {
-        @include font-style(12px, 500, 16px); 
-    }
 }
+
+
+@mixin Mobile-Title-Semibold {
+    @include font-style(24px, 600, 32.78px);
+}
+
+@mixin Mobile-Headline-Semibold {
+    @include font-style(18px, 600, 24.59px);
+}
+
+@mixin Mobile-Text-1-Semibold {
+    @include font-style(16px, 600, 21.86px);
+}
+
+@mixin Mobile-Text-1-Medium {
+    @include font-style(16px, 500, 21.86px);
+}
+
+@mixin Mobile-Text-2-Semibold {
+    @include font-style(14px, 600, 19.12px);
+}
+
+@mixin Mobile-Text-2-Medium {
+    @include font-style(14px, 500, 19.12px);
+}
+
+@mixin Mobile-Caption-2-Semibold {
+    @include font-style(10px, 600, 13.66px);
+}
+
+
+
+// .title-semibold {
+//     @include font-style(24px, 600, 32.78px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(18px, 600, 24.59px); 
+//     }
+// }
+
+// .headline-semibold {
+//     @include font-style(20px, 600, 27.32px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(18px, 600, 24.59px);
+//     }
+// }
+
+// .text-1-semibold {
+//     @include font-style(18px, 600, 24.59px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(16px, 600, 21.86px); 
+//     }
+// }
+
+// .text-1-medium {
+//     @include font-style(20px, 600, 27.32px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(16px, 500, 21.86px); 
+//     }
+// }
+
+// .text-2-semibold {
+//     @include font-style(16px, 600, 21.86px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(14px, 600, 19.12px); 
+//     }
+// }
+
+// .text-2-medium {
+//     @include font-style(16px, 500, 21.86px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(14px, 500, 19.12px); 
+//     }
+// }
+
+// .caption-regular {
+//     @include font-style(14px, 500, 19.12px);
+
+//     @media (max-width: 768px) {
+//         @include font-style(12px, 500, 16px); 
+//     }
+// }
 
 

@@ -13,3 +13,16 @@ export const getUser = createAsyncThunk(
       }
    },
 );
+
+export const deleteUser = createAsyncThunk(
+   'deleteUser',
+   async (payload, { dispatch }) => {
+      try {
+       
+          await $api.get(`/users/${payload}`);
+         return payload;
+      } catch (e) {
+        console.log(e)
+      }
+   },
+);

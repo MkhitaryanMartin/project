@@ -12,6 +12,13 @@
         background-color: $color-05;
         color: $color-02;
     }
+    &:disabled{
+        opacity: 0.5;
+        &:hover{
+            background-color: $color-01;
+    color: $color-06;
+        }
+    }
 
 }
 

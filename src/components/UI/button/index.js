@@ -1,8 +1,12 @@
 import "./style.scss"
 
-const Button = ({text})=>{
+const Button = ({
+    text="",
+    type="",
+    disabled=false
+})=>{
     return (
-        <button className="button">
+        <button className="button" type={type} disabled={disabled}>
             {text}
         </button>
     )
