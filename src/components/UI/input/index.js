@@ -26,7 +26,7 @@ const Input = ({
     const handleBlur = () => {
         setTimeout(() => {
             setIsFocused(false)
-        },)
+        },100)
     };
 
     const handleClear = () => {
