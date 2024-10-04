@@ -20,7 +20,7 @@ const EditeForm = ({
       loader ? <LoaderRing size="100px"/> : (
         <form onSubmit={formikEditeProfile.handleSubmit} className='profile-edite__form'> 
         <FormikProvider value={formikEditeProfile}>
-        <h4 className='title-semibold'>Данные профиля</h4>
+        <h4 >Данные профиля</h4>
                <Input label='Имя' name="name" defaultValue={name}/>
                <Input label='Никнейм' name="username" defaultValue={username}/>
                <Input label='Почта' name="email" type='email' defaultValue={email}/>

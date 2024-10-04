@@ -15,8 +15,9 @@
     &:disabled{
         opacity: 0.5;
         &:hover{
+            cursor: no-drop;
             background-color: $color-01;
-    color: $color-06;
+            color: $color-06;
         }
     }
 

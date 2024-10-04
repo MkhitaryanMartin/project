@@ -26,16 +26,16 @@ const UserCard = ({
             case "3":
                 dispatch(setUsersData({ id, archive: false }));
                 break;
-                case "4":
-                    dispatch(activeUserdata(id));
-                    break;
-            default: 
-            navigate(`profile-edite/${id}`)
-            
+            case "4":
+                dispatch(activeUserdata(id));
+                break;
+            default:
+                navigate(`profile-edite/${id}`)
+
         }
     }
     return (
-        <div  className={classNames('user-card', { 'user-card--active': archive})}>
+        <div className={classNames('user-card', { 'user-card--active': archive })}>
             <div className='user-card__left-block'>
                 <img src={imgUrl} alt='user' />
             </div>

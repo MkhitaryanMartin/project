@@ -7,6 +7,7 @@ import BackArrowIcon from '../../components/SVG/backArrowIcon';
 import EditeForm from './editeForm';
 import Loader from '../../components/loader';
 import "./style.scss";
+import EmptyData from '../../components/emptyData';
 
 const EditeProfile = () => {
     const { profile, loader, formikEditeProfile, patchLoader, onNavigate} = useContainer();
@@ -32,9 +33,9 @@ const EditeProfile = () => {
                         <div className='profile-edite__right-block'>
                             <Routes>
                                 <Route index element={<EditeForm {...profile} loader={patchLoader} formikEditeProfile={formikEditeProfile} />} />
-                                <Route path='workspace' element={<div>asdasaaaaaaaaaaaaad</div>} />
-                                <Route path='privacy' element={<div>asdasaaaaaaaaaaaaad</div>} />
-                                <Route path='safety' element={<div>asdasaaaaaaaaaaaaad</div>} />
+                                <Route path='workspace' element={<EmptyData/>} />
+                                <Route path='privacy' element={<EmptyData/>} />
+                                <Route path='safety' element={<EmptyData/>} />
                             </Routes>
                         </div>
                     </div>

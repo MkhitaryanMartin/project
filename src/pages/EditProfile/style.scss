@@ -13,7 +13,6 @@
     &__sections{
         display: flex;
         column-gap: 40px;
-        // margin-top: 44px;
        
     }
     &__left-block{
@@ -42,6 +41,7 @@
             border-bottom: 1px solid $color-04;
             padding-bottom: 16px;
             margin-bottom: 24px;
+            @include Title-Semibold;
         }
     }
     &__akordeons{

@@ -4,7 +4,6 @@ import { hideModal } from '../../store/modal';
 import MODAL_COMPONENTS from './modalComponents';
 
 const ModalRoot = ({ modalType = '', modalProps = {} }) => {
-   console.log(modalType,"modalType")
    const dispatch = useDispatch();
    if (!modalType) return;
    const hideModalHandler = () => {
