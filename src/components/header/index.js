@@ -7,7 +7,8 @@ import "./style.scss";
 const Header = ()=>{
     return (
         <header className="header">
-            <a href="/">
+          <div className="header__container">
+          <a href="/">
             <img src={logo} alt="logo"/>
             </a>
             <div className="header__right-block">
@@ -18,6 +19,7 @@ const Header = ()=>{
                     <p>Ivan1234</p>
                 </div>
             </div>
+          </div>
         </header>
     )
 }
