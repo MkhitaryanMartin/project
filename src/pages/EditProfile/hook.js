@@ -17,12 +17,12 @@ const useContainer = () => {
 
     const formikEditeProfile = useFormik({
         initialValues: {
-            name: profile.name || '',
-            username: profile.username || '',
-            email: profile.email || '',
-            phone: profile.phone || '',
-            city: profile.address?.city || '',
-            companyName: profile.company?.name || '',
+            name: profile?.name || '',
+            username: profile?.username || '',
+            email: profile?.email || '',
+            phone: profile?.phone || '',
+            city: profile?.address?.city || '',
+            companyName: profile?.company?.name || '',
         },
         validationSchema: editeProfilevalidationSchema,
         enableReinitialize: true,

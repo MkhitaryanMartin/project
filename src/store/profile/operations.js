@@ -4,7 +4,7 @@ import { showModal } from '../modal';
 
 export const getProfile = createAsyncThunk(
    'getProfile',
-   async (payload, { dispatch }) => {
+   async (payload) => {
       try {
        
          const { data } = await $api.get(`/users/${payload}`);
