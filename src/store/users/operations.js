@@ -3,10 +3,9 @@ import $api from '../../http';
 
 export const getUser = createAsyncThunk(
    'getUser',
-   async (payload, { dispatch }) => {
-      try {
-       
-         const { data } = await $api.get(`/users`);
+   async () => {
+      try { 
+         const { data } = await $api.get(`/users?_limit=6`);
          return data;
       } catch (e) {
         console.log(e)
@@ -16,7 +15,7 @@ export const getUser = createAsyncThunk(
 
 export const deleteUser = createAsyncThunk(
    'deleteUser',
-   async (payload, { dispatch }) => {
+   async (payload) => {
       try {
        
           await $api.get(`/users/${payload}`);

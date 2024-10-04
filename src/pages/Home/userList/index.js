@@ -11,7 +11,6 @@ const UserList = ({
 })=>{
 
     return (
-      
            <div className="home__active-block">
            <h2 className="title-semibold">{title}</h2>
            <div className="home__active-users">

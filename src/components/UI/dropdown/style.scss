@@ -29,6 +29,12 @@
                 @include Text-2-Medium;
                 color: $color-01;
             }
+
+            &:hover {
+                p {
+                    color: $Accent;
+                }
+            }
         }
 
     }
@@ -42,10 +48,11 @@
 
             li {
                 padding: 8px 12px;
-               p{
-                @include Mobile-Text-2-Medium;
-                color: $color-01;
-               }
+
+                p {
+                    @include Mobile-Text-2-Medium;
+                    color: $color-01;
+                }
             }
 
         }

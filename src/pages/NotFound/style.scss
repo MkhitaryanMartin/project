@@ -1,0 +1,10 @@
+.not-found{
+    display: flex;
+    justify-content: center;
+    height: calc(100dvh - 56px);
+    background-image: url('../../assets/img/404-page-not-found.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+ 
+}

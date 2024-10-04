@@ -5,7 +5,6 @@ import "./style.scss";
 const EmptyData = () => {
     return (
         <div className='empty-data'>
-          
             <EmptyIcon/>
             <p>No Data</p>
         </div>

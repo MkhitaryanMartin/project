@@ -1,7 +1,8 @@
 import { useField } from "formik";
+import { useState } from "react";
 import CrossIcon from "../../SVG/crossIcon";
 import "./style.scss";
-import { useState } from "react";
+
 
 const Input = ({
     type = "text",
@@ -12,7 +13,7 @@ const Input = ({
     const [field, meta, helpers] = useField(name);
     const hasError = meta.touched && meta.error;
     const { setValue } = helpers;
-    const [isFocused, setIsFocused] = useState(false); // Состояние для отслеживания фокуса
+    const [isFocused, setIsFocused] = useState(false);
 
     const onChangeHandler = (event) => {
         setValue(event.target.value);
@@ -23,13 +24,13 @@ const Input = ({
     };
 
     const handleBlur = () => {
-      setTimeout(()=>{
-        setIsFocused(false)
-      },)
+        setTimeout(() => {
+            setIsFocused(false)
+        },)
     };
 
     const handleClear = () => {
-        setValue(''); 
+        setValue('');
     };
 
     return (
@@ -40,11 +41,11 @@ const Input = ({
                     type={type}
                     placeholder={placeholder}
                     onChange={onChangeHandler}
-                    onFocus={handleFocus} 
+                    onFocus={handleFocus}
                     onBlurCapture={handleBlur}
                     {...field}
                 />
-                {isFocused && ( 
+                {isFocused && (
                     <div className="input__cross-icon" onClick={handleClear}>
                         <CrossIcon />
                     </div>

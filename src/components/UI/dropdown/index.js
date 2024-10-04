@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.scss"; // Импортируйте свои стили
+import "./style.scss";
 
 const Dropdown = ({ children, options, onClick }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const Dropdown = ({ children, options, onClick }) => {
             {isOpen && (
                 <ul className="dropdown__menu">
                     {options.map((option) => (
-                        <li onClick={(e)=>onClick(option?.key)} key={option.key} className="dropdown__item">
+                        <li onClick={()=>onClick(option?.key)} key={option.key} className="dropdown__item">
                             {option.label}
                         </li>
                     ))}

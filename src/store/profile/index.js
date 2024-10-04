@@ -18,10 +18,10 @@ export const profile = createSlice({
         state.loader = false;
         state.profile = payload;
       })
-      .addCase(getProfile.pending, (state, { payload }) => {
+      .addCase(getProfile.pending, (state) => {
         state.loader = true;
       })
-      .addCase(getProfile.rejected, (state, { payload }) => {
+      .addCase(getProfile.rejected, (state) => {
         state.loader = false;
       })
       .addCase(patchProfile.fulfilled, (state, { payload }) => {

@@ -27,7 +27,6 @@ export const patchProfile = createAsyncThunk(
                
             }),
          );
-           console.log(payload.data,"payload dataaaaaaaaa")
          return payload.data;
       } catch (e) {
         console.log(e)
